@@ -40,10 +40,7 @@ function render(digits) {
         });
 
     var layout = Viva.Graph.Layout.forceDirected(graph, {
-        springLength: 5,
-        springCoeff: 0.0005,
-        dragCoeff: 0.02,
-        gravity: -1.2
+        springLength: 5
     });
     var renderer = Viva.Graph.View.renderer(graph, {
         graphics: graphics,
